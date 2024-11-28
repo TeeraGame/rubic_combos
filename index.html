@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dota 2 Combo Finder</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Dota 2 Combo Finder</h1>
+		</header>
+
+		<main>
+			<p>
+				Выберите 5 вражеских героев, чтобы увидеть возможные комбинации Rubick:
+			</p>
+
+			<div class="hero-selector">
+				<input
+					type="text"
+					id="hero1"
+					list="heroes-list"
+					placeholder="Введите имя героя"
+				/>
+				<input
+					type="text"
+					id="hero2"
+					list="heroes-list"
+					placeholder="Введите имя героя"
+				/>
+				<input
+					type="text"
+					id="hero3"
+					list="heroes-list"
+					placeholder="Введите имя героя"
+				/>
+				<input
+					type="text"
+					id="hero4"
+					list="heroes-list"
+					placeholder="Введите имя героя"
+				/>
+				<input
+					type="text"
+					id="hero5"
+					list="heroes-list"
+					placeholder="Введите имя героя"
+				/>
+			</div>
+
+			<button class="check-btn" onclick="checkCombinations()">
+				Проверить комбинации
+			</button>
+
+			<div class="results" id="results"></div>
+		</main>
+
+		<footer>
+			<p>© 2024 Dota 2 Combo Finder. Сделано для игроков Rubick!</p>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
